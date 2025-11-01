@@ -59,7 +59,7 @@ app.get('/proxy', (req, res) => {
     logged_in,      // true/false
     timestamp,
   } = req.query;
-  console.log('Proxy request verified', req);
+  //console.log('Proxy request verified', req);
   
   console.log('Shop:', shop);
   console.log('Customer ID:', customer_id);
