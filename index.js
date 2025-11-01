@@ -298,17 +298,17 @@ app.get('/proxy', (req, res) => {
       <h1>Welcome to Our App</h1>
       <p>Choose a section:</p>
       
-      <a href="/apps/api/news" class="link-card">
+      <a href="/apps/news" class="link-card">
         <h2>📰 News</h2>
         <p>Read our latest updates and announcements</p>
       </a>
       
-      <a href="/apps/api/subscribe" class="link-card">
+      <a href="/apps/subscribe" class="link-card">
         <h2>✉️ Subscribe</h2>
         <p>Subscribe to our newsletter for exclusive offers</p>
       </a>
       
-      <a href="/apps/api/products" class="link-card">
+      <a href="/apps/products" class="link-card">
         <h2>🛍️ Featured Products</h2>
         <p>Check out our handpicked product selection</p>
       </a>
