@@ -32,6 +32,8 @@ function verifyProxyRequest(query) {
     .sort()
     .map(key => `${key}=${params[key]}`)
     .join('');
+
+    console.log('Sorted Params:', sortedParams);
   
   // Generate HMAC
   const hash = crypto
