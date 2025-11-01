@@ -20,6 +20,7 @@ if (!SHOPIFY_API_SECRET) {
 // Verify the proxy request is from Shopify
 function verifyProxyRequest(query) {
   const { signature, ...params } = query;
+  console.log(query, "Query")
   
   if (!signature) {
     console.log('No signature provided');
@@ -58,6 +59,7 @@ app.get('/proxy', (req, res) => {
     logged_in,      // true/false
     timestamp,
   } = req.query;
+  console.log('Proxy request verified', req);
   
   console.log('Shop:', shop);
   console.log('Customer ID:', customer_id);
